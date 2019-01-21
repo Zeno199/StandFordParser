@@ -80,12 +80,20 @@ edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz ： parser的model設�
 
 
 ## Ref:
-1.https://nlp.stanford edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/package-summary.html
+1.https://nlp.stanfordedu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/package-summary.html
+
 2.https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/parser/lexparser/LexicalizedParser.html
+
 3.http://puremonkey2010.blogspot.com/2012/08/stanford-parser-chinese-corpus-training.html
+
 4.https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/TreePrint.html
+
 5.https://www.cnblogs.com/stardjyeah/p/4574164.html
+
 6.https://zhuanlan.zhihu.com/p/31765395
+
 7.https://stanfordnlp.github.io/CoreNLP/cmdline.html
+
 8.https://nlp.stanford.edu/software/parser-faq.html#weaker
+
 9.https://www.cnblogs.com/stGeekpower/p/3457746.html
