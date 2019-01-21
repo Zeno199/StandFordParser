@@ -9,20 +9,21 @@ ChineseModel: http://nlp.stanford.edu/software/stanford-chinese-corenlp-2018-10-
 
 接著
 
-'''
+```
 mv stanford-chinese-corenlp-2018-10-05-models.jar  StanfordCoreNLP-chinese.properties ch_oneline.txt sent.txt stanford-corenlp-full-2018-10-05
-
+```
+```
 cd stanford-corenlp-full-2018-10-05
-'''
+```
 
 
 ## CoreNLP
 
 example ：
 
-'''
+```
 java -mx3g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLP -props StanfordCoreNLP-chinese.properties -file ch_oneline.txt -outputFormat text
-'''
+```
 
 參數說明 ：
 
@@ -45,9 +46,9 @@ edu.stanford.nlp.pipeline.StanfordCoreNLP: 執行的程式
 
 example ：
 
-'''
+```
 java -mx3g -cp "*" edu.stanford.nlp.parser.lexparser.LexicalizedParser -maxLength 200 -sentences newline -tLPP edu.stanford.nlp.parser.lexparser.ChineseTreebankParserParams -encoding UTF-8 -writeOutputFiles -outputFilesExtension out -outputFilesDirectory ../result -outputFormat "conll2007" edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz sent.txt
-'''
+```
 
 參數說明 ：
 
@@ -67,13 +68,14 @@ edu.stanford.nlp.parser.lexparser.LexicalizedParser: 執行的程式
 
 -writeOutputFiles -outputFilesDirectory ： 專門用來輸出檔案的部分
 
--outputFilesExtension： 輸出檔案的格式， "penn, typedDependenciesCollapsed" ， 可以設定許多輸出格式，輸出的結果都在同一檔案裡。輸出種類請見：https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/TreePrint.html (optionsString - Options that additionally specify how trees are to be printed (for instance, whether stemming should be done). Known options are: stem, lexicalize, markHeadNodes, xml, removeTopBracket, transChinese, includePunctuationDependencies, basicDependencies, treeDependencies, CCPropagatedDependencies, collapsedDependencies, nonCollapsedDependencies, nonCollapsedDependenciesSeparated, includeTags, conll2007.)
+-outputFilesExtension： 輸出檔案的檔名 ex: .out
 
--outputFormat ： "conll2007" 
+-outputFormat ： "conll2007"， "penn, typedDependenciesCollapsed" ， 可以設定許多輸出格式，輸出的結果都在同一檔案裡。輸出種類請見：https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/TreePrint.html (optionsString - Options that additionally specify how trees are to be printed (for instance, whether stemming should be done). Known options are: stem, lexicalize, markHeadNodes, xml, removeTopBracket, transChinese, includePunctuationDependencies, basicDependencies, treeDependencies, CCPropagatedDependencies, collapsedDependencies, nonCollapsedDependencies, nonCollapsedDependenciesSeparated, includeTags, conll2007.)
+
 
 edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz ： parser的model設定， The PCFG parsers are smaller and faster. But the Factored parser is significantly better for Chinese, and we would generally recommend its use。
 
-最後為輸入檔： sent.txt
+最後為輸入檔：sent.txt
 
 
 ## Ref:
