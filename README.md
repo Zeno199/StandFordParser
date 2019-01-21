@@ -70,7 +70,8 @@ edu.stanford.nlp.parser.lexparser.LexicalizedParser: 執行的程式
 
 -outputFilesExtension： 輸出檔案的檔名 ex: .out
 
--outputFormat ： "conll2007"， "penn, typedDependenciesCollapsed" ， 可以設定許多輸出格式，輸出的結果都在同一檔案裡。輸出種類請見：https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/TreePrint.html (optionsString - Options that additionally specify how trees are to be printed (for instance, whether stemming should be done). Known options are: stem, lexicalize, markHeadNodes, xml, removeTopBracket, transChinese, includePunctuationDependencies, basicDependencies, treeDependencies, CCPropagatedDependencies, collapsedDependencies, nonCollapsedDependencies, nonCollapsedDependenciesSeparated, includeTags, conll2007.)
+-outputFormat ： "conll2007"， "penn, typedDependenciesCollapsed" ， 可以設定許多輸出格式，輸出的結果都在同一檔案裡。輸出種類請見：https://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/TreePrint.html 
+(options are: stem, lexicalize, markHeadNodes, xml, removeTopBracket, transChinese, includePunctuationDependencies, basicDependencies, treeDependencies, CCPropagatedDependencies, collapsedDependencies, nonCollapsedDependencies, nonCollapsedDependenciesSeparated, includeTags, conll2007.)
 
 
 edu/stanford/nlp/models/lexparser/chineseFactored.ser.gz ： parser的model設定， The PCFG parsers are smaller and faster. But the Factored parser is significantly better for Chinese, and we would generally recommend its use。
