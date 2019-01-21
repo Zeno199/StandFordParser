@@ -9,9 +9,11 @@ ChineseModel: http://nlp.stanford.edu/software/stanford-chinese-corenlp-2018-10-
 
 接著
 
-  mv stanford-chinese-corenlp-2018-10-05-models.jar  StanfordCoreNLP-chinese.properties ch_oneline.txt sent.txt stanford-corenlp-full-2018-10-05
+'''
+mv stanford-chinese-corenlp-2018-10-05-models.jar  StanfordCoreNLP-chinese.properties ch_oneline.txt sent.txt stanford-corenlp-full-2018-10-05
 
 cd stanford-corenlp-full-2018-10-05
+'''
 
 
 ## CoreNLP
